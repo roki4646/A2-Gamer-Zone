@@ -141,19 +141,107 @@ header nav{
     width: 100%;
 }
 
-
-
-
 /* Banner End */
 
-
-/* Header Section Start */
-
-
-
-
-
 /* Header Section End */
+
+
+
+
+
+
+/* play-section start */
+
+.play-container{
+    padding: 0 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.play-info{
+    text-align: right;
+ 
+}
+.play-info h3{
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+}
+.play-info h3 span{
+    color: #F948B2;
+}
+.play-info p{
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px; 
+}
+.play-banner{
+    position: relative;
+ 
+}
+.play-banner .child-banner {
+    position: absolute;
+    left: -140px;
+    bottom: -65px;
+
+}
+.play-banner .parent-banner{
+    width: 100%;
+}
+
+/* play-section End */
+
+
+/* Footer start */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #0B0223;
+    color: #FFF;
+    padding: 100px 0;
+    gap: 20px;
+}
+footer ul{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+footer ul img{
+    width: 100%;
+    height: 100%;
+}
+footer ul li{
+    list-style: none;
+}
+
+footer ul li a{
+    text-decoration: none;
+   color: #FFF;
+}
+footer small, footer ul li small a{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+.social-icon {
+ gap:25px
+
+}
+
+
+
+/* Footer End */
+
+
+
+
+
 
 
 /* Responsive Section for Mobile  */
@@ -163,6 +251,7 @@ header nav{
         flex-direction: column;
         align-items: center;
         padding: 0 30px;
+
     }
     
     .right-side{
@@ -187,6 +276,31 @@ header nav{
     }
     .right-banner{
         width: 100%;
+    }
+    .play-info{
+        text-align: center;
+        width: 100%;
+    }
+
+    .play-container{
+        flex-direction: column;
+        padding: 0;
+        gap: 0;
+    }
+    .play-banner{
+        width: 80%;
+    }
+    .play-banner .child-banner{
+        left: -45px;
+        bottom: -35px;
+        width: 155px;
+    }
+
+    .footer-nav{
+        flex-wrap: wrap;
+    }
+    footer ul{
+        padding: 8px;
     }
     
 }
@@ -220,5 +334,24 @@ header nav{
     .right-banner{
         width: 100%;
     }
+    .play-info{
+        text-align: center;
+        width: 100%;
+    }
+
+    .play-container{
+        flex-direction: column;
+        padding: 0;
+        gap: 0;
+    }
+    .play-banner{
+        width: 80%;
+    }
+    .play-banner .child-banner{
+        left: -60px;
+        bottom: -42px;
+        width: 300px;
+    }
+
     
 }
