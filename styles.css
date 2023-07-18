@@ -5,12 +5,27 @@
 }
 
 
+/* Shared style */
+.btn{
+    color: #FFF;
+    padding: 20px 40px;
+    border-radius: 50px;  
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase; 
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
 /* Header Section Start */
 
 header{
     margin: 0 auto;
 }
-
+/* nav start */
 header nav{
     display: flex;
     justify-content: space-between;
@@ -48,6 +63,7 @@ header nav{
     text-align: center;
     font-size: 18px;
     font-weight: 500;
+    cursor: pointer;
 }
 .right-side li a .space{
     margin: 0 10px;
@@ -62,7 +78,76 @@ header nav{
     justify-content: space-around;
     padding: 8px 15px;
 }
+/* nav end */
 
+
+/* Banner Start */
+.banner-container{
+    padding: 0 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('images/Group\ 14.png');
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.left-banner{
+    width: 50%;
+
+}
+.left-banner h3{
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.left-banner h1{
+    font-family: Work Sans;
+    font-size: 95px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #F948B2;
+    margin: 15px 0;
+}
+.left-banner p{
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: lowercase;
+}
+.left-banner .icon-center{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.two-btn{
+    padding-top: 25px;
+}
+.left-banner .signin-btn{
+    background: #FD40A3;
+    margin-right: 15px;
+}
+.left-banner .go-btn{
+    background: #4EC5F7;
+}
+
+
+.right-banner{
+    width: 50%;
+}
+.right-banner img{
+    width: 100%;
+}
+
+
+
+
+/* Banner End */
+
+
+/* Header Section Start */
 
 
 
@@ -77,11 +162,31 @@ header nav{
     header nav{
         flex-direction: column;
         align-items: center;
+        padding: 0 30px;
     }
     
     .right-side{
         flex-direction: column;
         gap: 30px;
+        padding: 0;
+    }
+    .banner-container{
+        padding: 0 10px;
+        flex-direction: column-reverse;
+        background:none;
+    }
+    .left-banner h1{
+        font-size: 70px;
+    }
+    .left-banner{
+        width: 100%;
+        background-image: url('images/Group\ 14.png');
+        background-position:1vw;
+        background-repeat: no-repeat;
+        padding:10px;
+    }
+    .right-banner{
+        width: 100%;
     }
     
 }
@@ -99,5 +204,21 @@ header nav{
         flex-direction: column;
         gap: 30px;
     } */
+
+    .banner-container{
+        padding: 0 10px;
+        flex-direction: column-reverse;
+        background:none;
+    }
+    .left-banner{
+        width: 100%;
+        background-image: url('images/Group\ 14.png');
+        background-position:1vw;
+        background-repeat: no-repeat;
+        padding:10px;
+    }
+    .right-banner{
+        width: 100%;
+    }
     
 }
