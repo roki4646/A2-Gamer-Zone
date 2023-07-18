@@ -195,6 +195,63 @@ header nav{
 /* play-section End */
 
 
+/* Games Section Start */
+.games-container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.games{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 0;
+    padding: 30px;
+}
+
+.games li{
+    list-style: none;
+}
+.games li a{
+    padding: 3px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+}
+.games li a:hover{
+    border: 2px solid #FD40A3;
+    list-style: none;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.games li:hover small{
+    color: #FD40A3;
+    transition: 0.2s;
+}
+
+
+.games a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+}
+.games a small{
+    color: #0B0223;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+
+/* Games Section End */
+
+
+
 /* Footer start */
 footer{
     display: flex;
@@ -233,8 +290,6 @@ footer small, footer ul li small a{
  gap:25px
 
 }
-
-
 
 /* Footer End */
 
@@ -294,6 +349,16 @@ footer small, footer ul li small a{
         left: -45px;
         bottom: -35px;
         width: 155px;
+    }
+    .games{
+        padding: 10px;
+    }
+    .games a small{
+        font-size: 14px;
+    }
+    .games a img{
+        width: 35px;
+        height: 35px;
     }
 
     .footer-nav{
