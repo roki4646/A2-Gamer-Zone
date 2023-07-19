@@ -145,7 +145,44 @@ header nav{
 
 /* Header Section End */
 
+/* Videos section Start */
+.videos-container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.videos-container h3{
+    color: #0B0223;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+}
 
+.videos-container h3 > span {
+    color: #A854E0;
+}
+.videos-container p{
+    color: #534C64;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.videos-container .videos{
+    display: flex;
+    gap: 25px;
+}
+.video p{
+    text-align: left;
+}
+
+.video img:hover{
+   
+    -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0,0,0,0.3));
+
+      
+}
+
+/* Videos section End */
 
 
 
@@ -245,12 +282,7 @@ header nav{
     font-weight: 600;
 }
 
-
-
-
 /* Games Section End */
-
-
 
 /* Footer start */
 footer{
@@ -290,8 +322,14 @@ footer small, footer ul li small a{
  gap:25px
 
 }
-
 /* Footer End */
+
+
+
+
+
+
+
 
 
 
@@ -308,11 +346,15 @@ footer small, footer ul li small a{
         padding: 0 30px;
 
     }
-    
     .right-side{
         flex-direction: column;
         gap: 30px;
         padding: 0;
+    }
+    .videos{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .banner-container{
         padding: 0 10px;
@@ -398,6 +440,11 @@ footer small, footer ul li small a{
     }
     .right-banner{
         width: 100%;
+    }
+    .videos{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .play-info{
         text-align: center;
